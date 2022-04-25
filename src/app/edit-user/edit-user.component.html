@@ -1,0 +1,81 @@
+<form [formGroup]="formGroup" (ngSubmit)="submitForm()">
+
+  <div class="row">
+    <div class="col-md-6 col-xs-12 ">
+      <label>User Name</label>
+      &nbsp;
+
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <input id="name" value="" class="input" type="text" formControlName="firstname" autocomplete="new-username"
+        placeholder="firstname">
+      <small *ngIf="formGroup.get('firstname').errors?.required" class="text-danger d-block">
+        This field is required!
+      </small>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-xs-12 ">
+      <label>last Name</label>
+      &nbsp;
+
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <input id="name" value="" class="input" type="text" formControlName="lastName" autocomplete="new-username"
+        placeholder="firstname& lastname">
+      <small *ngIf="formGroup.get('lastName').errors?.required" class="text-danger d-block">
+        This field is required!
+
+      </small>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-xs-12 ">
+      <label>Email Adress</label>
+      &nbsp;
+
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <input id="email" value="" class="input" type="text" formControlName="email" autocomplete="new-username"
+        placeholder="Email...">
+      <small *ngIf="formGroup.get('email').errors?.required" class="text-danger d-block">
+        This field is required!
+
+      </small>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-xs-12 ">
+      <label>Phone Number</label>
+      &nbsp;
+
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <input id="name" value="" class="input" type="text" formControlName="phoneNumber" placeholder="Telefoonnummer.."
+        title="Phone no.">
+      <small *ngIf="formGroup.get('phoneNumber').errors?.required" class="text-danger d-block">
+        This field is required!
+
+      </small>
+      <small *ngIf="formGroup.get('phoneNumber').errors?.pattern" class="text-danger d-block">
+        Phone number is not valid!
+      </small>
+    </div>
+  </div>
+  <div class="Buttons
+    ">
+    <div class="col-6">
+      <button class="myButton" click="submitForm()" id="save">Save</button>
+
+    </div>
+    <div class="col-6">
+      <button class="myButton" click="cancel()" id="save">Cancel</button>
+
+    </div>
+
+  </div>
+
+</form>

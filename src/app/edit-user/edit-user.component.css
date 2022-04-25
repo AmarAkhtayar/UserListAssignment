@@ -1,0 +1,68 @@
+.editeprofile {
+  display: flow-root;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-left: 50px;
+  align-items: flex-start;
+}
+.Buttons {
+  display: inline-flex;
+}
+label {
+  color: #3f23da;
+  font-size: large;
+  font-family: -webkit-body;
+  text-align: center;
+  cursor: pointer;
+}
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: 0;
+  cursor: pointer;
+
+  border-radius: 10px;
+  width: 50%;
+}
+.myButton {
+  margin: 59px;
+  padding: 8px 40px;
+  border-radius: 12px;
+  border: 2px solid #9795dc;
+  background-color: #cbcdfa;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+.profile_img {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.img {
+  width: 12em;
+  border-radius: 50%;
+  border: 4px solid #9795dc;
+  @media (max-width: 991px) {
+    width: 6em;
+  }
+}
+
+a {
+  margin: 20px;
+}
+button {
+  padding: 15px 30px;
+  border-radius: 12px;
+  border: 2px solid #9795dc;
+  background-color: #512da7;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
